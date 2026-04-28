@@ -15,7 +15,7 @@ Stop running single agents. SenateLab gives them a shared canvas to communicate,
 [![Electron](https://img.shields.io/badge/electron-33-2a2e35?style=flat-square)](https://www.electronjs.org/)
 [![TypeScript](https://img.shields.io/badge/typescript-5.7-848a93?style=flat-square)](https://www.typescriptlang.org/)
 
-[Website](https://senatelab.xyz) · [Download](https://senatelabs.vercel.app/SenateLab_1.3.18_aarch64.dmg) · [Docs](https://senatelabs.vercel.app/documentation) · [Changelog](CHANGELOG.md)
+[Website](https://senatelab.xyz) · [Download](https://senatelabs.vercel.app/download) · [Docs](https://senatelabs.vercel.app/documentation) · [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -31,7 +31,7 @@ Built for engineers who already have one agent doing their work and want five do
 
 ```bash
 # Download the latest build
-curl -LO https://senatelabs.vercel.app/SenateLab_1.3.18_aarch64.dmg
+curl -LO https://senatelabs.vercel.app/download
 open SenateLab_1.3.18_aarch64.dmg
 
 # Or build from source
