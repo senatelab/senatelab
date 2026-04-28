@@ -1,0 +1,75 @@
+{
+  "name": "senatelab",
+  "version": "1.3.18",
+  "description": "A workspace where AI agents communicate, coordinate, and ship work as a team.",
+  "private": true,
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:main": "tsc -p tsconfig.main.json",
+    "start": "electron .",
+    "package": "electron-builder",
+    "release": "electron-builder --publish always",
+    "test": "vitest run",
+    "lint": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
+  },
+  "keywords": [
+    "desktop",
+    "electron",
+    "typescript",
+    "ai-agents",
+    "multi-agent",
+    "workspace"
+  ],
+  "author": "SenateLab Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "openai": "^4.73.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  },
+  "build": {
+    "appId": "xyz.senatelab.app",
+    "productName": "SenateLab",
+    "artifactName": "${productName}_${version}_${arch}.${ext}",
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        { "target": "dmg", "arch": ["arm64"] }
+      ],
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "hardenedRuntime": true
+    },
+    "dmg": {
+      "sign": false
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "KnotekBerzas",
+      "repo": "senatelab"
+    }
+  }
+}

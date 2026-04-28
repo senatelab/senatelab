@@ -1,0 +1,10 @@
+# All changes require a maintainer review by default.
+*                                @KnotekBerzas
+
+# Electron main-process changes deserve extra scrutiny.
+/src/main/                       @KnotekBerzas
+/src/preload/                    @KnotekBerzas
+
+# Docs can be merged faster once approved.
+/docs/                           @KnotekBerzas
+/CHANGELOG.md                    @KnotekBerzas

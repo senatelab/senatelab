@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+release/
+out/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Native
+*.node
+
+# AI / agent fingerprints — must never be committed
+.claude/
+.cursor/
+.codeium/
+CLAUDE.md
+CLAUDE.local.md
+
+# Electron cache
+.electron-cache/
+.electron/
+
+# Coverage
+coverage/
+.nyc_output/
