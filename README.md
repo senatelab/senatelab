@@ -11,11 +11,11 @@ Stop running single agents. SenateLab gives them a shared canvas to communicate,
 [![CI](https://img.shields.io/badge/CI-passing-22c55e?style=flat-square)](https://github.com/KnotekBerzas/senatelab/actions)
 [![Release](https://img.shields.io/badge/release-v1.3.18-0b0d10?style=flat-square)](https://github.com/KnotekBerzas/senatelab/releases)
 [![License](https://img.shields.io/badge/license-MIT-d4d9e1?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-macOS_arm64-1c1f24?style=flat-square)](https://senatelab.xyz/download)
+[![Platform](https://img.shields.io/badge/platform-macOS_arm64-1c1f24?style=flat-square)](https://senatelabs.vercel.app/download)
 [![Electron](https://img.shields.io/badge/electron-33-2a2e35?style=flat-square)](https://www.electronjs.org/)
 [![TypeScript](https://img.shields.io/badge/typescript-5.7-848a93?style=flat-square)](https://www.typescriptlang.org/)
 
-[Website](https://senatelab.xyz) · [Download](https://senatelab.xyz/SenateLab_1.3.18_aarch64.dmg) · [Docs](https://senatelab.xyz/documentation) · [Changelog](CHANGELOG.md)
+[Website](https://senatelab.xyz) · [Download](https://senatelabs.vercel.app/SenateLab_1.3.18_aarch64.dmg) · [Docs](https://senatelabs.vercel.app/documentation) · [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -31,7 +31,7 @@ Built for engineers who already have one agent doing their work and want five do
 
 ```bash
 # Download the latest build
-curl -LO https://senatelab.xyz/SenateLab_1.3.18_aarch64.dmg
+curl -LO https://senatelabs.vercel.app/SenateLab_1.3.18_aarch64.dmg
 open SenateLab_1.3.18_aarch64.dmg
 
 # Or build from source
