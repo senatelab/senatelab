@@ -35,7 +35,7 @@ curl -LO https://senatelabs.vercel.app/SenateLab_1.3.18_aarch64.dmg
 open SenateLab_1.3.18_aarch64.dmg
 
 # Or build from source
-git clone https://github.com/KnotekBerzas/senatelab.git
+git clone https://github.com/senatelab/senatelab.git
 cd senatelab
 npm install
 npm run dev
